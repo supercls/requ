@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script data-main="js/main" src="js/require.js" ></script>
+<button onclick="tag()">111</button>
+<body>
+	<script>
+		/*require(['math','jquery'], function (x,$){
+　　　　　　alert(x.add(2,8));
+			alert($(window).height()+'00')
+		});*/
+		function tag(){
+			require(['math','jquery','xo'], function (ma){
+　　　　　　     console.log(ma.add(1,8));
+					alert($(this).html())
+			});
+		}
+		tag()
+	</script>
+</body>
+</html>

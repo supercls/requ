@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script data-main="js/main" src="js/require.js" ></script>
+<button onclick="tag()">111</button>
+<body>
+	<script>
+		function tag(){
+			//异步加载时候需放在mian.js后执行
+			require(['xo','dilog'],function(A,B){
+				console.log(6)
+				B.message()
+			})
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script data-main="js/mian" src="js/require.js" ></script>
+<body>
+	<script>
+		// require(['js/a.js','js/vue.js'],function(){
+		// 	alert('load  finished')
+		// })
+		// require.config({
+		// 	paths:{  //不用写.js
+		// 		"jquery":["http://libs.baidu.com/jquery/2.0.3/jquery","js/jquery"],
+		// 		"a":"js/a"
+		// 	}
+		// })
+		require(['a','jquery'],function(){
+			alert($(window).height())
+		})
+	</script>
+</body>
+</html>
