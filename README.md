@@ -1,1 +1,1 @@
-模块化require.js 666
+模块化require.js
